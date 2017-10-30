@@ -19,6 +19,6 @@ public class Boxer extends Athlete {
     }
 
     public int calculatePoints(){
-        return hitsGiven -= hitsTaken;
+        return hitsGiven - hitsTaken;
     }
 }

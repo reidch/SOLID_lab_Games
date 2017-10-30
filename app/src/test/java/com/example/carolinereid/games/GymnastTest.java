@@ -16,7 +16,7 @@ public class GymnastTest {
     @Before
     public void before() {
         gymnast = new Gymnast("Nadia Comaneci", 12, 9);
-        gymnast2 = new Gymnast("Beth Tweddle", 12, 2);
+        gymnast2 = new Gymnast("Beth Tweddle", 10, 2);
     }
 
     @Test
@@ -30,14 +30,14 @@ public class GymnastTest {
     }
 
     @Test
-    public void canBeAwardedMedal() {
+    public void testCanBeAwardedMedal() {
+        gymnast.awardedMedal();
         assertEquals(MedalStatus.GOLD, gymnast.getMedalStatus());
     }
 
-    @Test
-    public void testCanBeAwardedMedal() {
-//        gymnast2.diffPoints = 10;
-        gymnast2.awardedMedal();
-        assertEquals(MedalStatus.SILVER, gymnast2.getMedalStatus());
-    }
+//    @Test
+//    public void testCanBeAwardedMedal() {
+//        gymnast2.awardedMedal();
+//        assertEquals(MedalStatus.SILVER, gymnast2.getMedalStatus());
+//    }
 }

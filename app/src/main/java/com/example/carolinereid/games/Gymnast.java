@@ -15,7 +15,7 @@ public class Gymnast extends Athlete {
     }
 
     public int calculatePoints(){
-        return diffPoints += execPoints;
+        return diffPoints + execPoints;
     }
 
     public void setDiffPoints(int diffPoints) {
